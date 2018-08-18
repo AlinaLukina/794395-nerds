@@ -6,21 +6,28 @@
   </head>
   <body>
 <header>
+  <div class="header-navigation">
   <nav class="main-navigation">
     <ul class="site-navigation">
       <li> <a href="studio.html"> студия </a></li>
       <li> <a href="clients.html"> клиенты </a></li>
-    <li> <a href="shop.html"> магазин </a></li>
+    <li> <a href="inner.html"> магазин </a></li>
     <li> <a href="contacts.html"> контакты </a></li>
   </ul>
-  <!-- здесь должна быть корзина-->
-</nav>
-<section class="shop">
+</div>
+<div class="basket">
+  <ul class="main-basket">
+    <li  <a href="basket.html"> корзина </a></li>
+  </ul>
+</div>
+</header>
+<main class="shop">
+<section class="inner">
     <h1> Магазин готовых шаблонов </h1>
   </section>
-</header>
-
-<main class="catalogue">
+<section class="templates">
+  <h2 class="visually-hidden"> выбор шаблона </h2>
+  <div class="choice-list">
 <nav class="shop-navigation">
   <b> сортировать </b>
   <ul>
@@ -29,22 +36,96 @@
     <li>по названию </li>
   </ul>
 </nav>
-<a href="sedona.html"> </a>
-  <a href="pink.html"></a>
-    <a href="barbershop.html"></a>
-      <a href="mishka.html"></a>
-        <a href="school.html"></a>
-          <a href="kvast.html"> </a>
-            <nav class="catalogue-navigation">
-              <ul>
+</div>
+<div class="templates-list">
+  <ul class="templates-items">
+<li>
+  <a href="sedona.html">
+  <img src="sedona.jpeg" alt="Sedona">
+</a>
+</li>
+  <li>
+    <a href="pink.html">
+    <img src="pink.jpeg" alt="Pink">
+    </a>
+  </li>
+  <li>
+    <a href="barbershop.html">
+      <img src="barbershop.jpeg" alt="barbershop">
+      </a>
+  </li>
+  <li>
+      <a href="mishka.html">
+        <img src="mishka.jpeg" alt="Mishka">
+        </a>
+    </li>
+    <li>
+        <a href="school.html">
+          <img src="school.jpeg" alt="school">
+          </a>
+      </li>
+      <li>
+          <a href="kvast.html">
+            <img src="kvast.jpeg" alt="kvast">
+            </a>
+        </li>
+      </ul>
+      <div>
+        <div class="templates-navigation">
+            <nav class="items-navigation">
+              <ul class="items-list">
                 <li> 1 </li>
                 <li> 2 </li>
                 <li> 3 </li>
                 <li> следующая </li>
             </ul>
         </nav>
-    </main>
-    <footer>
+      </div>
+    </section>
+    <section class="forms">
+      <div class="form-price">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="price">Стоимость</label>
+        <input type="range" id="price" name="start" min="1" max="15">
+      </form>
+      <div class="form-grid">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="grid"> Сетка </label>
+          <label>
+      <input type="radio"  name="choice-1" value="Адаптировная">
+    </label>
+    <br>
+        <label>
+<input type="radio"  name="choice-2" value="Фиксированная">
+</label>
+<br>
+    <label>
+<input type="radio" name="choice-3" value="Резиновая">
+        </label>
+        <br>
+      </form>
+    </div>
+
+      <div class="particular-qualities">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="checkbox" name="qualities" id="slider" checked>
+       <label for="slider">Слайдер</label>
+       <br>
+       <input type="checkbox" name="qualities" id="blog" checked>
+    <label for="blog">Блок преимуществ</label>
+    <br>
+    <input type="checkbox" name="qualities" id="news" >
+ <label for="news">Новости</label>
+ <br>
+ <input type="checkbox" name="qualities" id="gallery" checked>
+<label for="slider">Галерея</label>
+<br>
+<input type="checkbox" name="qualities" id="bin" >
+<label for="bin">Корзина</label>
+      </form>
+    </section>
+
+
       <section class="contacts">
         <h3> Nerds web studio </h3>
         191186, Санкт-Петербург <br>
@@ -52,7 +133,8 @@
         тел. +7(812) 275-75-75 <br>
         <a class="bottom" href="mail.html" напишите нам </a>
         </section>
-
+</main>
+<footer>
         <section class="social">
           <b> Давайте дружить, это выгодно! </b>
             <p> Скидка 10% для друзей из социальных сетей </p>
