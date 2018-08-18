@@ -5,17 +5,24 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-<header>
-  <!-- logo-->
-  <nav class="main-navigation">
-    <ul class="site-navigation">
-      <li> <a href="studio.html"> студия </a></li>
-      <li> <a href="clients.html"> клиенты </a></li>
-    <li> <a href="shop.html"> магазин </a></li>
-    <li> <a href="contacts.html"> контакты </a></li>
-  </ul>
-  <!-- здесь должна быть корзина-->
-</nav>
+    <header>
+      <div class="header-navigation">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li> <a href="studio.html"> студия </a></li>
+          <li> <a href="clients.html"> клиенты </a></li>
+        <li> <a href="inner.html"> магазин </a></li>
+        <li> <a href="contacts.html"> контакты </a></li>
+      </ul>
+    </div>
+    <div class="basket">
+      <ul class="main-basket">
+        <li  <a href="basket.html"> корзина </li>
+        <img src="img/cart-icon.svg" alt="logo"></a>
+      </ul>
+    </div>
+    </header>
+    <main class="main-content">
 <h1 class="visually-hidden"> Дизайн студия </h1>
 <section class="tagline">
 <h2 class="visually-hidden"> слоган </h2>
@@ -23,24 +30,23 @@
 <p> Математически выверенный дизайн для вашего сайта или мобильного приложени </p>
 <a class="buttom" href="learnmore.html"> узнать больше </a>
 </section>
-</header>
 
-<main class="main-content">
+
 <section class="project">
   <ul class=project-list>
     <li class="project-item">
       <h3> Веб-сайты </h3>
-      <img src="web-site.html" alt="веб-сайт">
+      <img src="img/illustration-1.jpg" alt="веб-сайт">
       <p> Мир никогда не будет прежним после того как увидит ваш сайт! </p>
       <a class="buttom" href="make-order.html"> заказать </a>
       <li class="project-item">
-        <img src="app.html" alt="приложения">
+        <img src="img/illustration-2.jpg" alt="приложения">
         <h3> Приложени </h3>
         <p> Покорите топ 10 приложений в AppStore и Google Play </p>
         <a class="buttom" href="make-order.html"> заказать </a>
         <li class="project-item">
           <h3> Презентации </h3>
-          <img src="presentation.html" alt="презентации">
+          <img src="img/illustration-3.jpg" alt="презентации">
           <p> Вы даже не подозреваете, насколько вы изумительны! </p>
           <a class="buttom" href="make-order.html"> заказать </a>
         </ul>
@@ -74,25 +80,51 @@
          <td> минимальная предоплата </td>
        </tr>
        </table>
-       <!-- фоновые рисунки-->
+       <sections class="partners">
+         <h2 class="visually-hidden"> Партнеры </h2>
+         <ul class="partners-list">
+           <li> <a href="htmlacademy.ru">
+             <img src="img/logo-1.png" alt="html academy"></a>
+           </li>
+           <li> <a href="borodinski.html">
+             <img src="img/logo-2.png" alt="borodinski"></a>
+           </li>
+           <li> <a href=pink.html"">
+             <img src="img/logo-3.png" alt="pink"></a>
+           </li>
+           <li> <a href="mishka.html">
+             <img src="img/logo-4.png" alt="mishkay"></a>
+           </li>
+         </ul>
+         <section>
      </section>
-   </main>
-
-   <footer>
      <section class="contacts">
        <h3> Nerds web studio </h3>
        191186, Санкт-Петербург <br>
        ул. Б. Конюшенная, д.19/8 <br>
        тел. +7(812) 275-75-75 <br>
        <a class="bottom" href="mail.html" напишите нам </a>
+         <img src="img/map.jpg" alt="карта">
        </section>
+</main>
+   </main>
 
-       <section class="social">
-         <b> Давайте дружить, это выгодно! </b>
-           <p> Скидка 10% для друзей из социальных сетей </p>
-         </section>
-       </footer>
-
+   <footer>
+           <section class="social">
+             <div class="social-items">
+               <ul class="social-icons">
+                 <li  <a href="nerds-vk.html">  </li>
+                 <img src="img/vk-icon.svg" alt="vk"></a>
+                 <li  <a href="nerds-fb.html">  </li>
+                 <img src="img/fb-icon.svg" alt="fb"></a>
+                 <li  <a href="nerds-insta.html">  </li>
+                 <img src="img/insta-icon.svg" alt="instagram"></a>
+               </ul>
+             </div>
+             <b> Давайте дружить, это выгодно! </b>
+               <p> Скидка 10% для друзей из социальных сетей </p>
+             </section>
+           </footer>
 
 
   </body>
