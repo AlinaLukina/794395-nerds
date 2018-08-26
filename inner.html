@@ -88,35 +88,42 @@
       </div>
     </section>
     <section class="forms">
+      <h2 class="visually-hidden" Фильтры /h2>
       <div class="form-price">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p><b> Стоимость </b></p>
-
+        <form class="filters"  action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>
+          <b> Стоимость </b>
+        </legend>
         <input type="range" id="price" name="start" min="1" max="15">
-      </form>
+      </fieldset>
+      </div>
       <div class="form-grid">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p><b> Сетка </b></p>
-
+      <fieldset>
+        <legend>
+          <b> Сетка </b>
+          </legend>
           <br>
-          <label>
-              <input type="radio"  name="choice"  value="Адаптировная"> Адаптировная
-          </label>
+
+          <input type="radio"  name="choice"  value="Адаптировная" id="adaptive">
+          </label for="adaptive"> Адаптировная </label>
     <br>
-        <label>
-<input type="radio"  name="choice" value="Фиксированная"> Фиксированная
-</label>
-<br>
-    <label>
-<input type="radio" name="choice" value="Резиновая"> Резиновая
-        </label>
-        <br>
-      </form>
+
+<input type="radio"  name="choice" value="Фиксированная"id="fixed">
+<label for="fixed"> Фиксированная </label>
+    <br>
+
+<input type="radio" name="choice" value="Резиновая" id="rubber">
+<label for="rubber"> Резиновая </label>
+      <br>
+    </fieldset>
     </div>
 
       <div class="particular-qualities">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p><b>Особенности </b></p>
+        <fieldset>
+          <legend>
+          <b>Особенности </b>
+        </legend>
           <input type="checkbox" name="qualities" id="slider" checked>
        <label for="slider">Слайдер</label>
        <br>
@@ -133,9 +140,10 @@
 <label for="bin">Корзина</label>
 <br>
 <button type="submit" value="Показать">  Показать </buttom>
-      </form>
+</fieldset>
+</div>
     </section>
-
+</form>
 
       <section class="contacts">
         <h3> Nerds web studio </h3>
@@ -145,6 +153,29 @@
         <a class="bottom" href="mail.html" напишите нам </a>
           <img src="img/map.jpg" alt="карта">
         </section>
+
+        <section class="contact-us">
+          <div>
+        <h2> Напишите нам </h2>
+        <form class="user-data"  action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+
+        <input type="text" name="login" id="login-field" placeholder="Имя Фамилия">
+        <label for="login-field">Ваше имя: </label>
+
+        <input type="text" name="email" id="email-field" placeholder="email@example.com">
+        <label for="email-field">Ваш e-mail: </label>
+
+      <br>
+
+        <input type="textarea" name="text" id="text-field" placeholder="В свободной форме">
+        <label for="text-field">Текст письма: </label>
+        <br>
+        <button type="submit" value="Отправить">  Отправить </buttom>
+        </fieldset>
+      </div>
+      </form>
+    </section>
 </main>
 <footer>
         <section class="social">
