@@ -121,7 +121,7 @@ border: 3px solid #fb565a;
       color:#000000;
     }
 
-    .project-list a:first-child {
+    .project-item a {
       width: 234px;
       padding: 13px 0;
       margin-top: 25px;
@@ -168,6 +168,14 @@ border: 3px solid #fb565a;
 .about{
   font-size: 45px;
   line-height: 45px;
+}
+.small-studio ul li ::before {
+content: "черта";
+  position:absolute;
+  top:10px;
+  left:1px;
+  width:25px;
+  border-bottom:2px solid #fb565a;
 }
     .we-do b{
       font-size: 16px;
