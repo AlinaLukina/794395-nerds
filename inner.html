@@ -17,40 +17,37 @@
     </head>
     <body>
       <header>
-        <div class="header-navigation">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
+<div class="grey">
+<nav class="main-navigation">
+<a href="index.html" class="logo-img">
+<img src="img/nerds-logo.png" width="100" height="50" alt="Нёрдс"></a>
+<ul class="site-navigation">
             <li> <a href="studio.html"> студия </a></li>
             <li> <a href="clients.html"> клиенты </a></li>
           <li> <a href="inner.html"> магазин </a></li>
           <li> <a href="contacts.html"> контакты </a></li>
         </ul>
-      </div>
-      <div class="basket">
-        <ul class="main-basket">
-          <background src="svg/cart-icon.svg">
-          <li>  <a href="basket.html"> корзина </li> </a>
+        <ul class="basket">
+            <li>  <a href="basket.html"> корзина </li> </a>
         </ul>
-      </div>
-          <div class="logo-img">
-        <a href="index.html">
-           <img src="img/nerds-logo.png" width="100" height="50" alt="Нёрдс"></a>
-         </div>
-
+      </nav>
+      <div>
       </header>
 <main class="shop">
 <section class="inner">
+  <div class="grey ">
     <h1> Магазин готовых шаблонов </h1>
+    </div>
   </section>
 <section class="templates">
   <h2 class="visually-hidden"> выбор шаблона </h2>
   <div class="choice-list">
 <nav class="shop-navigation">
   <b> сортировать </b>
-  <ul>
-    <li>по цене </li>
-    <li>по типу </li>
-    <li>по названию </li>
+  <ul class="filter">
+    <li> <a href="#" > по цене </a> </li>
+    <li> <a href="#" >по типу  </a> </li>
+    <li> <a href="#" >по названию  </a> </li>
   </ul>
 </nav>
 </div>
@@ -58,7 +55,7 @@
   <ul class="templates-items">
 <li>
   <a href="sedona.html">
-  <img src="img/sedona.jpg" alt="Sedona">
+  <img src="img/sedona.jpg" width="360" height="576"  alt="Sedona">
 </a>
 </li>
 <div class="pop-up-block" width="361" height="231">
@@ -123,20 +120,20 @@
         </div>
 
       </ul>
-      <div>
+    </div>
         <div class="templates-navigation">
-            <nav class="items-navigation">
+
               <ul class="items-list">
-                <li> 1 </li>
-                <li> 2 </li>
-                <li> 3 </li>
-                <li> следующая </li>
+                <li>  <a href="#" > 1 </a> </li>
+                <li>  <a href="#" > 2</a> </li>
+                <li>   <a href="#" > 3 </a> </li>
+                <li>  <a href="#" > следующая </a> </li>
             </ul>
-        </nav>
+
       </div>
     </section>
     <section class="forms">
-      <h2 class="visually-hidden" Фильтры /h2>
+      <h2 class="visually-hidden"> Фильтры </h2>
       <div class="form-price">
         <form class="filters"  action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
@@ -152,17 +149,23 @@
           <b> Сетка </b>
           </legend>
           <br>
-
-          <input type="radio"  name="choice"  value="Адаптировная" id="adaptive">
+          <ul>
+          <li class="filter-option">
+          <input type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
           </label for="adaptive"> Адаптировная </label>
+        </li>
     <br>
 
+        <li class="filter-option">
 <input type="radio"  name="choice" value="Фиксированная"id="fixed">
 <label for="fixed"> Фиксированная </label>
+</li>
     <br>
-
+  <li class="filter-option">
 <input type="radio" name="choice" value="Резиновая" id="rubber">
 <label for="rubber"> Резиновая </label>
+</li>
+</ul>
       <br>
     </fieldset>
     </div>
@@ -172,72 +175,64 @@
           <legend>
           <b>Особенности </b>
         </legend>
+        <ul>
+          <li class="filter-option">
           <input type="checkbox" name="qualities" id="slider" checked>
        <label for="slider">Слайдер</label>
+     </li>
        <br>
+         <li class="filter-option">
        <input type="checkbox" name="qualities" id="blog" checked>
     <label for="blog">Блок преимуществ</label>
+  </li>
     <br>
+      <li class="filter-option">
     <input type="checkbox" name="qualities" id="news" >
  <label for="news">Новости</label>
+</li>
  <br>
+   <li class="filter-option">
  <input type="checkbox" name="qualities" id="gallery" checked>
 <label for="slider">Галерея</label>
+</li>
 <br>
+  <li class="filter-option">
 <input type="checkbox" name="qualities" id="bin" >
 <label for="bin">Корзина</label>
+</li>
+</ul>
+</fieldset>
 <br>
 <button type="submit" value="Показать">  Показать </buttom>
-</fieldset>
+
 </div>
-    </section>
 </form>
+    </section>
+
 
       <section class="contacts">
         <h3> Nerds web studio </h3>
         191186, Санкт-Петербург <br>
         ул. Б. Конюшенная, д.19/8 <br>
         тел. +7(812) 275-75-75 <br>
-        <a class="bottom" href="mail.html" напишите нам </a>
+        <a class="bottom" href="mail.html"> напишите нам </a>
           <img src="img/map.jpg" alt="карта">
         </section>
 
-        <section class="contact-us">
-          <div>
-            <fieldset>
-        <h2> Напишите нам </h2>
-        <form class="user-data"  action="https://echo.htmlacademy.ru" method="post">
 
-
-        <input type="text" name="login" id="login-field" placeholder="Имя Фамилия">
-        <label for="login-field">Ваше имя: </label>
-
-        <input type="text" name="email" id="email-field" placeholder="email@example.com">
-        <label for="email-field">Ваш e-mail: </label>
-
-      <br>
-
-        <input type="textarea" name="text" id="text-field" placeholder="В свободной форме">
-        <label for="text-field">Текст письма: </label>
-        <br>
-        <button type="submit" value="Отправить">  Отправить </buttom>
-        </fieldset>
-      </div>
-      </form>
-    </section>
 </main>
 <footer>
         <section class="social">
           <div class="social-items">
             <ul class="social-icons">
-              <li  <a href="nerds-vk.html">  </li>
-              <img src="img/vk-icon.svg" alt="vk"></a>
-              <li  <a href="nerds-fb.html">  </li>
-              <img src="img/fb-icon.svg" alt="fb"></a>
-              <li  <a href="nerds-insta.html">  </li>
-              <img src="img/insta-icon.svg" alt="instagram"></a>
+              <li>  <a href="nerds-vk.html"> vk </li>
+              <img src="svg/vk-icon.svg" alt="vk"> </a>
+              <li>  <a href="nerds-fb.html"> fb  </li>
+              <img src="svg/fb-icon.svg" alt="fb"></a>
+              <li>  <a href="nerds-insta.html"> instagram  </li>
+              <img src="svg/insta-icon.svg" alt="instagram"></a>
             </ul>
-          </div>
+          </div class="friends">
           <b> Давайте дружить, это выгодно! </b>
             <p> Скидка 10% для друзей из социальных сетей </p>
           </section>
