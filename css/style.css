@@ -454,3 +454,13 @@ list-style: none;
     color:#000000;
     font-weight:600;
 }
+
+.partners-list a:link {
+color:#000000;
+  opacity: 0.2;
+}
+
+.partners-list a:hover {
+color:#000000;
+  opacity: 1;
+}

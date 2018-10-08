@@ -7,31 +7,21 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <head>
-      <meta charset="utf-8">
-      <title>HTML Academy: Нёрдс</title>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-      <header>
-<div class="grey">
-<nav class="main-navigation">
-<a href="index.html" class="logo-img">
-<img src="img/nerds-logo.png" width="100" height="50" alt="Нёрдс"></a>
-<ul class="site-navigation">
-            <li> <a href="studio.html"> студия </a></li>
-            <li> <a href="clients.html"> клиенты </a></li>
-          <li> <a href="inner.html"> магазин </a></li>
-          <li> <a href="contacts.html"> контакты </a></li>
-        </ul>
-        <ul class="basket">
-            <li>  <a href="basket.html"> корзина </li> </a>
-        </ul>
-      </nav>
-      <div>
+  <body class="inner-page">
+      <header class="page-header">
+          <nav class="main-navigation">
+              <a href="index.html" class="logo-img">
+                  <img src="img/nerds-logo.png" width="100" height="50" alt="Нёрдс"></a>
+              <ul class="site-navigation">
+                  <li> <a href="studio.html"> студия </a></li>
+                  <li> <a href="clients.html"> клиенты </a></li>
+                  <li> <a href="inner.html"> магазин </a></li>
+                  <li> <a href="contacts.html"> контакты </a></li>
+              </ul>
+              <ul class="basket">
+                  <li><a href="basket.html"> корзина </a></li>
+              </ul>
+          </nav>
       </header>
 <main class="shop">
 <section class="inner">
@@ -51,6 +41,87 @@
   </ul>
 </nav>
 </div>
+</section>
+<section class="forms">
+  <h2 class="visually-hidden"> Фильтры </h2>
+  <div class="form-price">
+    <form class="filters"  action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>
+      <b> Стоимость </b>
+    </legend>
+    <input type="range" id="price" name="start" min="1" max="15"> <br>
+    <lagend> от </lagend>
+<input type="text">
+      <lagend> до </lagend>
+      <input type="text">
+  </fieldset>
+  </div>
+  <div class="form-grid">
+  <fieldset>
+    <legend>
+      <b> Сетка </b>
+      </legend>
+
+      <ul>
+      <li class="filter-option">
+      <input type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
+      <label for="adaptive"> Адаптировная </label>
+    </li>
+
+
+    <li class="filter-option">
+<input type="radio"  name="choice" value="Фиксированная"id="fixed">
+<label for="fixed"> Фиксированная </label>
+</li>
+
+<li class="filter-option">
+<input type="radio" name="choice" value="Резиновая" id="rubber">
+<label for="rubber"> Резиновая </label>
+</li>
+</ul>
+
+</fieldset>
+</div>
+
+  <div class="particular-qualities">
+    <fieldset>
+      <legend>
+      <b>Особенности </b>
+    </legend>
+    <ul>
+      <li class="filter-option">
+      <input type="checkbox" name="qualities" id="slider" checked>
+   <label for="slider">Слайдер</label>
+ </li>
+
+     <li class="filter-option">
+   <input type="checkbox" name="qualities" id="blog" checked>
+<label for="blog">Блок преимуществ</label>
+</li>
+
+  <li class="filter-option">
+<input type="checkbox" name="qualities" id="news" >
+<label for="news">Новости</label>
+</li>
+
+<li class="filter-option">
+<input type="checkbox" name="qualities" id="gallery" checked>
+<label for="slider">Галерея</label>
+</li>
+
+<li class="filter-option">
+<input type="checkbox" name="qualities" id="bin" >
+<label for="bin">Корзина</label>
+</li>
+</ul>
+</fieldset>
+
+<button class="display" type="submit" value="Показать">  Показать </buttom>
+
+</form>
+</div>
+</section>
 <div class="templates-list">
   <ul class="templates-items">
 <li>
@@ -131,90 +202,12 @@
             </ul>
 
       </div>
-    </section>
-    <section class="forms">
-      <h2 class="visually-hidden"> Фильтры </h2>
-      <div class="form-price">
-        <form class="filters"  action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>
-          <b> Стоимость </b>
-        </legend>
-        <input type="range" id="price" name="start" min="1" max="15">
-      </fieldset>
-      </div>
-      <div class="form-grid">
-      <fieldset>
-        <legend>
-          <b> Сетка </b>
-          </legend>
-          <br>
-          <ul>
-          <li class="filter-option">
-          <input type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
-          </label for="adaptive"> Адаптировная </label>
-        </li>
-    <br>
-
-        <li class="filter-option">
-<input type="radio"  name="choice" value="Фиксированная"id="fixed">
-<label for="fixed"> Фиксированная </label>
-</li>
-    <br>
-  <li class="filter-option">
-<input type="radio" name="choice" value="Резиновая" id="rubber">
-<label for="rubber"> Резиновая </label>
-</li>
-</ul>
-      <br>
-    </fieldset>
-    </div>
-
-      <div class="particular-qualities">
-        <fieldset>
-          <legend>
-          <b>Особенности </b>
-        </legend>
-        <ul>
-          <li class="filter-option">
-          <input type="checkbox" name="qualities" id="slider" checked>
-       <label for="slider">Слайдер</label>
-     </li>
-       <br>
-         <li class="filter-option">
-       <input type="checkbox" name="qualities" id="blog" checked>
-    <label for="blog">Блок преимуществ</label>
-  </li>
-    <br>
-      <li class="filter-option">
-    <input type="checkbox" name="qualities" id="news" >
- <label for="news">Новости</label>
-</li>
- <br>
-   <li class="filter-option">
- <input type="checkbox" name="qualities" id="gallery" checked>
-<label for="slider">Галерея</label>
-</li>
-<br>
-  <li class="filter-option">
-<input type="checkbox" name="qualities" id="bin" >
-<label for="bin">Корзина</label>
-</li>
-</ul>
-</fieldset>
-<br>
-<button class="display" type="submit" value="Показать">  Показать </buttom>
-
-</div>
-</form>
-    </section>
-
 
       <section class="contacts">
-        <h3> Nerds web studio </h3>
-        191186, Санкт-Петербург <br>
-        ул. Б. Конюшенная, д.19/8 <br>
-        тел. +7(812) 275-75-75 <br>
+        <h3> Nerds Design studio </h3>
+    <p>  191186, Санкт-Петербург </p>
+    <p>  ул. Б. Конюшенная, д.19/8 </p>
+    <p> тел. +7(812) 275-75-75 </p>
         <a class="bottom" href="mail.html"> напишите нам </a>
           <img src="img/map.jpg" alt="карта">
         </section>
@@ -222,19 +215,26 @@
 
 </main>
 <footer>
-        <section class="social">
-          <div class="social-items">
-            <ul class="social-icons">
-              <li>  <a href="nerds-vk.html"> vk </li>
-              <img src="svg/vk-icon.svg" alt="vk"> </a>
-              <li>  <a href="nerds-fb.html"> fb  </li>
-              <img src="svg/fb-icon.svg" alt="fb"></a>
-              <li>  <a href="nerds-insta.html"> instagram  </li>
-              <img src="svg/insta-icon.svg" alt="instagram"></a>
-            </ul>
-          </div class="friends">
-          <b> Давайте дружить, это выгодно! </b>
-            <p> Скидка 10% для друзей из социальных сетей </p>
-          </section>
-        </footer>
+    <section class="social">
+
+        <ul class="social-icons">
+            <li>
+                <a href="nerds-vk.html"> <span class="visually-hidden"> vk </span>
+                    <img src="svg/vk-icon.svg" alt="vk"> </a>
+            </li>
+            <li>
+                <a href="nerds-fb.html"> <span class="visually-hidden"> fb </span>
+                    <img src="svg/fb-icon.svg" alt="fb"></a>
+            </li>
+            <li>
+                <a href="nerds-insta.html"> <span class="visually-hidden"> instagram </span>
+                    <img src="svg/insta-icon.svg" alt="instagram"></a>
+            </li>
+        </ul>
+
+        <b> Давайте дружить, это выгодно! </b>
+        <p> Скидка 10% для друзей из социальных сетей </p>
+    </section>
+
+</footer>
       </body>
