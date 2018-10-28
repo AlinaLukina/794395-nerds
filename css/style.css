@@ -133,17 +133,6 @@ background-position: top right;
 background-repeat: no-repeat;
 }
 
-  .logo-img a:link {
-      color: #000000;
-    }
-  .logo-img  a:visited{
-        color: #a6a6a6;
-    }
-  .logo-img  a:hover{
-      color: #303030
-    }
-
-
     .project-list {
       list-style: none;
     }
