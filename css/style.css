@@ -19,7 +19,7 @@ body {
 a {
   text-decoration: none;
 }
-a.buttom {
+a.button {
  display: block;
 width: 234px;
 padding: 13px 0;
@@ -54,9 +54,7 @@ border: 3px solid #fb565a;
 .site-navigation a:link {
   color: #000000;
 }
-.site-navigation a:visited{
-    color: #eeeeee;
-}
+
 .site-navigation a:hover{
   color: #fb565a
 }
@@ -312,7 +310,7 @@ position: absolute;
             color:inherit;
         }
 
-        .contacts a.buttom {
+        .contacts a.button {
           display: block;
          width: 234px;
          padding: 13px 0;
