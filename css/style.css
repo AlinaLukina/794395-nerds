@@ -28,11 +28,26 @@ a {
     color: #000000;
     font-weight: 500;
     text-transform:uppercase;
+    width:1160px;
+    padding: 0 20px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 
 }
 
+.container{
+  width:1160px;
+  padding: 0 20px;
+  margin:0 auto;
+}
 .site-navigation {
   list-style: none;
+  display:flex;
+}
+.site-navigation li{
+  margin: 0 10px;
 }
 
 .site-navigation a {
@@ -50,11 +65,6 @@ a {
   color: #000000;
   text-decoration: underline;
   text-decoration-color:#fb565a
-}
-
-.main-tagline {
-margin: 0px;
-font-weight: 500px;
 }
 
 .grey h1 {
@@ -84,9 +94,10 @@ margin: 0px;
 .tagline h3 {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 600;
   color: #000000;
   text-align:left;
+  margin: 0px;
+  font-weight: 500;
 }
 .tagline p {
   font-size:16px;
@@ -124,6 +135,8 @@ background-repeat: no-repeat;
 
     .project-list {
       list-style: none;
+      display: flex;
+      
     }
      .project-list h3 {
        font-size:24px;
@@ -292,10 +305,14 @@ body .inner-page {
 }
 
   .forms fieldset {
+
   border: none;
 }
   .forms legend {
-
+font-weight:600;
+font-size:18px;
+text-transform: uppercase;
+line-height: 30px;
   }
 
   .forms  ul {
@@ -349,8 +366,9 @@ border: 3px solid #eeeeee;
 .inner h1 {
   font-size:55px;
   line-height:55px;
-  color:000000;
+  color:#000000;
   text-align: center;
+  font-weight:500;
 }
 .visually-hidden {
   display:none;
@@ -451,9 +469,11 @@ background-color: #eeeeee
 .table-title {
   text-transform: uppercase;
   font-weight: 600;
+  color:black;
 }
-.per-cent {
-
+.percent {
+font-size:24px;
+vertical-align:super;
 }
 
 .studio-name {
@@ -487,3 +507,79 @@ background-color: #eeeeee
     font-weight: 600;
     color:#000000
   }
+.project-title {
+  text-transform: uppercase;
+}
+.percent-title{
+  font-size: 45px;
+  line-height:10px;
+  font-weight:600;
+  color:black;
+}
+
+.filer-label{
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.filter-price{
+  font-size: 16px;
+  line-height:22px;
+  color: #283136
+
+}
+.filter-price::placeholder {
+  font-size: 16px;
+  line-height:22px;
+  color: #283136
+}
+.sort-title {
+  font-size: 18px;
+  line-height:30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.filer-link{
+  font-weight: 400;
+  font-size:14px;
+  line-height: 18px;
+  color:#4d4d4d;
+  text-transform: uppercase;
+}
+.popup-title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size:18px ;
+  line-height:30px ;
+  color:black;
+}
+.popup-text{
+  text-align: center;
+  line-height:18px ;
+  color:#666666;
+}
+.pagination-link{
+  font-weight: 500;
+  font-size:16px;
+  line-height:18px;
+  color:black;
+  text-transform: uppercase;
+  display:block;
+  max-width:40px;
+  text-align:center;
+  padding:10px 15px;
+  background-color: #eeeeee;
+}
+
+.pagination-next {
+    background-color: #eeeeee;
+    max-width:140px;
+}
+.items-list{
+  list-slyle:none;
+  display:flex;
+}
+
+.items-list li{
+  margin-right:5px;
+}
