@@ -10,6 +10,12 @@ body {
   background-color: #ffffff;
   }
 
+  .container {
+    width:1160px;
+    padding: 0 20px;
+    margin:0 auto;
+  }
+
 
 .grey {
   background-color: #eeeeee;
@@ -20,9 +26,8 @@ a {
   text-decoration: none;
 }
 
-
-
 .main-navigation {
+  padding-top:   3px;
   font-size: 16px;
     line-height: 30px;
     color: #000000;
@@ -37,17 +42,17 @@ a {
 
 }
 
-.container{
-  width:1160px;
-  padding: 0 20px;
-  margin:0 auto;
-}
 .site-navigation {
-  list-style: none;
+  list-style:   none;
+	display:   flex;
+	padding-left:   0;
+	width:   442px;
+	padding-right:   8px;
+	justify-content:   space-between;
   display:flex;
 }
 .site-navigation li{
-  margin: 0 10px;
+  margin: 0;
 }
 
 .site-navigation a {
@@ -71,15 +76,15 @@ a {
   position: absolute;
   left:0;
   bottom:-7px;
-  color:#fb565a;
+  background:#fb565a;
   width:100%;
   height:2px;
 }
 
 .basket{
-  list-style: none;
-  font-weight: 500;
-  margin: 0px;
+  list-style:   none;
+	font-weight:   500;
+	margin:   0px;
 }
 
 .basket a:link {
@@ -104,6 +109,7 @@ a {
   text-align:left;
   margin: 0px;
   font-weight: 500;
+  padding-top: 65px;
 }
 .tagline p {
   font-size:16px;
@@ -113,30 +119,14 @@ a {
   margin: 0 0 37px;
   padding: 0;
   text-align:left;
+  padding-top:   28px;
 }
-.slide1 {
-  background-image: url("../img/slide1.png");
-   width:633px;
-    height:430px;
-  background-color: #eeeeee;
- background-position: top right;
-  background-repeat: no-repeat;
-}
-.slide2{
-background-image: url("../img/slide2.png");
-width:633px;
- height:430px;
-background-color: #eeeeee;
-background-position: top right;
-background-repeat: no-repeat;
-}
-.slide3{
-background-image: url("../img/slide3.png");
-width:633px;
- height:430px;
-background-color: #eeeeee;
-background-position: top right;
-background-repeat: no-repeat;
+.slide {
+  padding-bottom:   81px;
+	background:   url(./img/slide1.png);
+	background-repeat:   no-repeat;
+	background-position:   94% 6px;
+
 }
 
     .project-list {
@@ -144,6 +134,11 @@ background-repeat: no-repeat;
       display: flex;
       padding:0;
       margin:0;
+      width:   1102px;
+    	justify-content:   space-between;
+
+}
+
 
     }
      .project-list h3 {
@@ -152,6 +147,7 @@ background-repeat: no-repeat;
        font-weight: 700;
        color:#000000;
        text-align:left;
+       margin:   0;
     }
 
     .project-list p {
@@ -160,7 +156,13 @@ background-repeat: no-repeat;
       font-weight: 400;
       color:#283136;
       text-align:left;
+      margin:   0;
+ margin-top:   17px;
+ padding-right:   20px;
     }
+    .project-item{
+ width:  300px;
+}
 
 .small-studio {
       list-style: none;
@@ -169,6 +171,7 @@ background-repeat: no-repeat;
     }
 
 .studio-title{
+
   font-size: 45px;
   line-height: 45px;
   font-weight:500;
@@ -183,6 +186,7 @@ background-repeat: no-repeat;
   font-weight:400;
   background-color:inherit;
   text-align:left;
+  margin-top: 35px;
 }
 
 
@@ -194,13 +198,18 @@ background-repeat: no-repeat;
   background-color:inherit;
   text-align:left;
   list-style:none;
+  padding-top: 8px;
 
 }
-.small-studio ul li ::before {
-content: "-";
+.what-we-do {
+  position: relative;
+
+}
+.what-we-do::before  {
+content: "";
 position: absolute;
   top:10px;
-  left:1px;
+  left: -37px;
   width:25px;
   border-bottom:2px solid #fb565a;
 }
@@ -213,6 +222,10 @@ position: absolute;
 
 .we-do {
   list-style: none;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
     .we-do b{
       font-size: 16px;
@@ -220,6 +233,10 @@ position: absolute;
       font-size:400;
       color:#000000;
     }
+.partners {
+  margin-top: 105px
+}
+
 .partners-list  {
   list-style: none;
   padding:0;
@@ -276,7 +293,7 @@ position: absolute;
 
         .contacts a.button {
           display: block;
-         width: 234px;
+         width: 242px;
          padding: 13px 0;
          margin-top: 25px;
          font-size: 16px;
@@ -287,6 +304,9 @@ position: absolute;
          background: #fb565a;
          border-radius: 3px;
          border: 3px solid #fb565a;
+         border:   none;
+       	min-height:   22px;
+       	padding-top:   17px;
 
         }
 
@@ -454,7 +474,8 @@ color:#000000;
 }
 
 .page-header {
-  background-color: #eeeeee
+  background-color: #eeeeee;
+  padding-top:   48px;
 }
 
 .tagline {
@@ -463,7 +484,7 @@ background-color: #eeeeee
 
 .button {
   display: block;
-  width: 234px;
+  width: 242px;
   padding: 13px 0;
   margin-top: 25px;
   font-size: 16px;
@@ -472,20 +493,40 @@ background-color: #eeeeee
   text-transform: uppercase;
   text-align: center;
   background: #fb565a;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
+  border:   none;
+  min-height:   22px;
+  padding-top:   17px;
 }
 
 .button-site {
     background-color:#fb565a;
+    height: 20px;
+    width: 160px;
+    margin-top: 33px;
+    padding-top: 17px;
+    min-height: 20px;
+
 }
 
 .button-app {
-    background-color:#00ca74
+    background-color:#00ca74;
+    height: 20px;
+    width: 160px;
+    margin-top: 33px;
+    padding-top: 17px;
+    min-height: 20px;
+
 }
 
 .button-presentation {
-    background-color:#efc84a
+    background-color:#efc84a;
+    min-height: 20px;
+    width: 160px;
+    margin-top: 33px;
+    padding-top: 17px;
+
 }
 
 .social-link {
@@ -552,8 +593,16 @@ vertical-align:super;
   color:#444444;
   opacity:0.5;
 }
+.project {
+margin-top:   78px;
+}
+
 .project-title {
   text-transform: uppercase;
+  padding-top:   17px;
+  font-size: 24px;
+  line-height: 30px;
+  margin:0;
 }
 .percent-title{
   font-size: 45px;
@@ -631,12 +680,14 @@ vertical-align:super;
   margin-right:5px;
 }
 .about{
+  margin-top: 118px;
   display: flex;
   justify-content:space-between;
 }
 .contact-info{
   position: absolute;
   background-color: white;
+  z-index: 20;
   top:56px;
   left:calc((100vw - 1200px)/2);
 }
@@ -644,6 +695,7 @@ vertical-align:super;
 .map {
 position:relative ;
 text-align: center;
+margin-top: 120px;
 
 }
 iframe {
@@ -687,13 +739,13 @@ iframe {
   padding-left: 36px;
 }
 .basket-link::before {
-  position: absolute;
-  left: 0;
-  top:0;
-  content:"";
-  display:block;
-  width:19px;
-  height:16px;
-  background: url("img/cart-icon.svg") 50% 50% no-repeat;
-  background-size: contain;
+  position:   absolute;
+	left:   -5px;
+	top:   2px;
+	content:   "";
+	display:   block;
+	width:   19px;
+	height:   16px;
+	background:   url(../img/cart-icon.svg) 50% 50% no-repeat;
+	background-size:   contain;
 }
