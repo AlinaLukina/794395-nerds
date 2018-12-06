@@ -244,7 +244,7 @@ position: absolute;
   content: "";
   position: absolute;
   display: block;
-  width:calc((100%-40px));
+  width:calc((100% - 40px));
   height: 3px;
   left: 20px;
   bottom: -40px;
@@ -257,6 +257,20 @@ position: absolute;
   padding:0;
   margin:0 auto;
   display: flex;
+}
+.partners-item{
+  position: relative;
+}
+
+.partners-item::before{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 257px;
+  background-color: #eeeeee;
+  width: 2px;
+  height: 53px;
 }
     .partners a:link{
     color:#d4d4d4;
@@ -684,7 +698,7 @@ margin-top:   78px;
   padding-right: 40px;
 }
 .prons {
-  padding-top: 31px;
+  padding-top: 32px;
   text-align: left;
 line-height: 18px;
 }
@@ -692,7 +706,7 @@ line-height: 18px;
   padding-left: 15px;
 }
 .prons-min {
-padding-right: 25px;
+padding-left: 23px;
 }
 .prons-level{
   padding-left: 12px;
@@ -781,7 +795,7 @@ padding-right: 25px;
   content: "";
   position: absolute;
   display: block;
-  width:calc((100%-40px));
+  width:calc((100% - 40px));
   height: 3px;
   left: 20px;
   top:-38px;
@@ -791,7 +805,7 @@ background: #eeeeee;
 content: "";
 position: absolute;
 display: block;
-width:calc((100%-40px));
+width:calc((100% - 40px));
 height: 3px;
 left: 20px;
 bottom: -58px;
@@ -810,6 +824,7 @@ background: #eeeeee;
 .map {
 position:relative ;
 margin-top: 116px;
+height: 416px;
 
 }
 iframe {
@@ -825,14 +840,42 @@ iframe {
   list-style:none;
   display:flex;
   width:262px;
-  margin-top: 68px;
+  margin-top: 25px;
   justify-content: space-between;
 
 }
-.social-footer{
-  padding-left: 140px;
-  padding-top: 72px;
+.benefit{
+padding-left: 138px;
+padding-top: 30px;
 }
+.social-icons  li{
+  position: relative;
+}
+.social-icons li:first-child::before{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 40px;
+  left: 25px;
+  background: url("../img/vk-icon.svg") 50% 50% no-repeat;
+}
+.social-icons li:nth-child(2)::before{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 40px;
+  left: 25px;
+  background: url("../img/fb-logo.svg") 50% 50% no-repeat;
+}
+.social-icons li:last-child::before{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 40px;
+  left: 25px;
+  background: url("../img/insta-icon.svg") 50% 50% no-repeat;
+}
+
 .catalog-wrap {
   display:flex;
 }
