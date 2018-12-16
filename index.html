@@ -73,7 +73,7 @@
          </section>
          <section class="about container">
             <div class="small-studio">
-               <h2 class="studio-title"> Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+               <h2 class="studio-title"> Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
                <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы. </p>
                <h3>Выполняем заказы на разработку</h3>
                <ul class="we-do">
@@ -132,8 +132,8 @@
                <p  class="address address-phone">тел. +7(812) 275-75-75</p>
                <a class="button contact-button" href="mail.html">напишите нам</a>
             </div>
-            <img src="img/map1.jpg" alt="карта">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A26607953117868394d844144b5d8f79c855f5afc9ba3518503bff90c0f9702a8&amp;source=constructor" width="100%" height="417" frameborder="0"></iframe>
+            <img src="img/map1.jpg" alt="карта" width="100%">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A26607953117868394d844144b5d8f79c855f5afc9ba3518503bff90c0f9702a8&amp;source=constructor"></iframe>
          </section>
       </main>
       <footer class="container social-footer">
@@ -167,26 +167,23 @@
       <section class="contact-us contact-us-login">
          <h2> Напишите нам </h2>
          <form class="user-data" action="https://echo.htmlacademy.ru" method="post">
-            <div class="login-data">
-              <p>
-               <label for="login-field">Ваше имя: </label>
-               <input type="text" name="login" id="login-field" placeholder="Имя Фамилия">
-             </p>
-             <p>
-               <label for="email-field">Ваш e-mail: </label> </p>
+           <button class="modal-close" type="button">Закрыть
+             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#fb565a" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+           </button>
+            <p class="form-part">
+               <label class="form-label" for="login-field">Ваше имя: </label>
+               <input class="form-input" type="text" name="login" id="login-field" placeholder="Имя Фамилия">
+            </p>
+            <p class="form-part">
+               <label class="form-label" for="email-field">Ваш e-mail: </label>
+               <input class="form-input" type="text" name="email" id="email-field" placeholder="email@example.com">
+            </p>
+            <p class="form-full">
+               <label class="form-label" for="text-field">Текст письма: </label>
+               <textarea class="form-textarea" name="text" id="text-field" placeholder="В свободной форме"></textarea>
+            </p>
+               <button class="button form-button" type="submit" value="Отправить"> Отправить </button>
 
-               <p>
-               <input type="text" name="email" id="email-field" placeholder="email@example.com">
-             </p>
-            </div>
-            <div>
-               <label for="text-field">Текст письма: </label>
-               <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea>
-               <button class="button" type="submit" value="Отправить"> Отправить </button>
-               <button class="modal-close" type="button">Закрыть
-                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#fb565a" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-               </button>
-            </div>
          </form>
       </section>
    </body>
