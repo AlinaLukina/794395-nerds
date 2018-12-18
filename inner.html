@@ -45,10 +45,10 @@
                    </div>
 
                   <div class="price-controls">
-                     <label class="filer-label" for="from"> от </label>
+                     <label class="filter-label" for="from"> от </label>
                      <input type="text" id="from" placeholder="0" class="filter-price">
-                     <label class="filer-label max-price" for="to"> до </label>
-                     <input type="text" id="to" placeholder="15 000"class="filter-price">
+                     <label class="filter-label max-price" for="to"> до </label>
+                     <input type="text" id="to" placeholder="15 000" class="filter-price">
                   </div>
                 </div>
                </fieldset>
@@ -56,15 +56,15 @@
                   <legend> Сетка: </legend>
                   <ul>
                      <li class="filter-option">
-                        <input type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
                         <label for="adaptive"> Адаптивная </label>
                      </li>
                      <li class="filter-option">
-                        <input type="radio"  name="choice" value="Фиксированная" id="fixed">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio"  name="choice" value="Фиксированная" id="fixed">
                         <label for="fixed"> Фиксированная </label>
                      </li>
                      <li class="filter-option">
-                        <input type="radio" name="choice" value="Резиновая" id="rubber">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="choice" value="Резиновая" id="rubber">
                         <label for="rubber"> Резиновая </label>
                      </li>
                   </ul>
@@ -74,23 +74,23 @@
                      <legend> Особенности: </legend>
                      <ul>
                         <li class="filter-option">
-                           <input type="checkbox" name="qualities" id="slider" checked>
+                           <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="qualities" id="slider" checked>
                            <label for="slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
-                           <input type="checkbox" name="qualities" id="blog" checked>
+                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="blog" checked>
                            <label for="blog">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
-                           <input type="checkbox" name="qualities" id="news" >
+                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="news" >
                            <label for="news">Новости</label>
                         </li>
                         <li class="filter-option">
-                           <input type="checkbox" name="qualities" id="gallery" checked>
+                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="gallery" checked>
                            <label for="slider">Галерея</label>
                         </li>
                         <li class="filter-option">
-                           <input type="checkbox" name="qualities" id="bin" >
+                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="bin" >
                            <label for="bin">Корзина</label>
                         </li>
                      </ul>
@@ -106,9 +106,9 @@
             <div class="choice-list">
                <span class="sort-title"> сортировать: </span>
                <ul class="filter">
-                  <li><a href="#"class="filer-link" > по цене </a></li>
-                  <li><a href="#"class="filer-link" >по типу  </a></li>
-                  <li><a href="#"class="filer-link" >по названию </a></li>
+                  <li><a href="#" class="filter-link" > по цене </a></li>
+                  <li><a href="#" class="filter-link" >по типу  </a></li>
+                  <li><a href="#" class="filter-link" >по названию </a></li>
                </ul>
                <ul class="filter-up-down">
                   <li><a href="#" > <span class="visually-hidden">По возрастанию </span></a></li>
@@ -126,7 +126,7 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> sedona </h2>
                      <p class="popup-text">Информационный сайт для туристов </p>
-                     <a class="button" href="sedona.html"> 9 900 руб.. </a>
+                     <a class="button popup-btn" href="sedona.html"> 9 900 руб.. </a>
                   </div>
                </li>
                <li class="templates-item">
@@ -136,7 +136,7 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> Pink App </h2>
                      <p class="popup-text">Продуктовый лендинг приложения для IOS и Android </p>
-                     <a class="button" href="pink.html"> 9 900 руб. </a>
+                     <a class="button popup-btn" href="pink.html"> 9 900 руб. </a>
                   </div>
                </li>
                <li class="templates-item">
@@ -146,7 +146,7 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> barbershop </h2>
                      <p class="popup-text"> Сайт салона красоты. Для мужчин, да. </p>
-                     <a class="button" href="barbershop.html"> 9 900 руб. </a>
+                     <a class="button popup-btn" href="barbershop.html"> 9 900 руб. </a>
                   </div>
                </li>
                <li class="templates-item">
@@ -156,7 +156,7 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> mishka </h2>
                      <p class="popup-text">Интернет-магазин вязаных игрушек </p>
-                     <a class="button" href="mishka.html"> 9 900 руб. </a>
+                     <a class="button popup-btn" href="mishka.html"> 9 900 руб. </a>
                   </div>
                </li>
                <li class="templates-item">
@@ -166,7 +166,7 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> A Plus </h2>
                      <p class="popup-text">Лендинг курсов повышения квалификации </p>
-                     <a class="button" href="school.html"> 9 900 руб. </a>
+                     <a class="button popup-btn" href="school.html"> 9 900 руб. </a>
                   </div>
                </li>
                <li class="templates-item">
@@ -176,22 +176,22 @@
                   <div class="pop-up-block">
                      <h2 class="popup-title"> Kvast </h2>
                      <p class="popup-text">Промо-сайт производителя крафтового кваса </p>
-                     <a class="button" href="kvast.html"> 9 900 руб. </a>
+                     <a class="button popup-btn" href="kvast.html"> 9 900 руб. </a>
                   </div>
                </li>
             </ul>
          </div>
-       </div>
-     </div>
          <div class="templates-navigation">
             <ul class="items-list container">
                <li><a href="#" class="pagination-link"> 1 </a></li>
-               <li><a href="#"class="pagination-link" > 2</a></li>
-               <li><a href="#"class="pagination-link" > 3 </a></li>
-               <li><a href="#"class="pagination-link pagination-next" > следующая </a></li>
+               <li><a href="#" class="pagination-link" > 2</a></li>
+               <li><a href="#" class="pagination-link" > 3 </a></li>
+               <li><a href="#" class="pagination-link pagination-next" > следующая </a></li>
             </ul>
          </div>
        </div>
+     </div>
+
        <section class="map">
           <div class="contact-info">
              <h3 class="studio-name">Nerds Design Studio</h3>
@@ -201,7 +201,7 @@
              <a class="button contact-button" href="mail.html">напишите нам</a>
           </div>
           <img src="img/map1.jpg" alt="карта">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A26607953117868394d844144b5d8f79c855f5afc9ba3518503bff90c0f9702a8&amp;source=constructor" width="100%" height="417" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A26607953117868394d844144b5d8f79c855f5afc9ba3518503bff90c0f9702a8&amp;source=constructor"></iframe>
        </section>
     </main>
     <footer class="container social-footer">
