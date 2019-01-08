@@ -19,7 +19,7 @@
               <li><a href="contacts.html"> контакты </a></li>
            </ul>
            <ul class="basket">
-              <li class="basket-style"><a class="basket-link active-link-basket" href="basket.html"> корзина </a></li>
+              <li class="basket-style"><a class="basket-link" href="basket.html"> корзина </a></li>
            </ul>
         </nav>
      </header>
@@ -57,15 +57,15 @@
                   <ul>
                      <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio"  name="choice"  value="Адаптировная" id="adaptive" checked>
-                        <label for="adaptive"> Адаптивная </label>
+                        <label class="radio-btn" for="adaptive"> Адаптивная </label>
                      </li>
                      <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio"  name="choice" value="Фиксированная" id="fixed">
-                        <label for="fixed"> Фиксированная </label>
+                        <label class="radio-btn" for="fixed"> Фиксированная </label>
                      </li>
                      <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio" name="choice" value="Резиновая" id="rubber">
-                        <label for="rubber"> Резиновая </label>
+                        <label class="radio-btn" for="rubber"> Резиновая </label>
                      </li>
                   </ul>
                </fieldset>
@@ -75,23 +75,23 @@
                      <ul>
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="qualities" id="slider" checked>
-                           <label for="slider">Слайдер</label>
+                           <label class="checkbox-btn" for="slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="blog" checked>
-                           <label for="blog">Блок преимуществ</label>
+                           <label class="checkbox-btn" for="blog">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="news" >
-                           <label for="news">Новости</label>
+                           <label class="checkbox-btn" for="news">Новости</label>
                         </li>
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="gallery" checked>
-                           <label for="slider">Галерея</label>
+                           <label class="checkbox-btn" for="slider">Галерея</label>
                         </li>
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="qualities" id="bin" >
-                           <label for="bin">Корзина</label>
+                           <label class="checkbox-btn" for="bin">Корзина</label>
                         </li>
                      </ul>
                   </fieldset>
@@ -111,8 +111,8 @@
                   <li><a href="#" class="filter-link" >по названию </a></li>
                </ul>
                <ul class="filter-up-down">
-                  <li class="sort-out"><a  href="#" > <span class="visually-hidden">По возрастанию </span></a></li>
-                  <li class="sort-out"><a href="#" > <span class=" visually-hidden">По убыванию </span></a></li>
+                  <li class="sort-out-up"><a href="#" > <span class="visually-hidden">По возрастанию </span></a></li>
+                  <li class="sort-out-down"><a href="#" > <span class=" visually-hidden">По убыванию </span></a></li>
                </ul>
             </div>
          </section>
@@ -182,7 +182,7 @@
             </ul>
          </div>
          <div class="templates-navigation">
-            <ul class="items-list container">
+            <ul class="items-list">
                <li><a href="#" class="pagination-link active-point"> 1 </a></li>
                <li><a href="#" class="pagination-link" > 2</a></li>
                <li><a href="#" class="pagination-link" > 3 </a></li>
